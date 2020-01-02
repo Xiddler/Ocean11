@@ -4,3 +4,6 @@ Easy, peasy.
 
 
 i added this at  18:43
+
+I added this at 18:47 - how long before it gets to my Droplet?
+
