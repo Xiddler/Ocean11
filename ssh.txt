@@ -1,0 +1,18 @@
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2020-02-17 21:49:15 UTC; 3min 45s ago
+  Process: 19737 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 19744 (sshd)
+    Tasks: 1 (limit: 1152)
+   CGroup: /system.slice/ssh.service
+           └─19744 /usr/sbin/sshd -D
+
+Feb 17 21:49:15 ubuntu-s-1vcpu-1gb-lon1-01 systemd[1]: Starting OpenBSD Secure Shell server...
+Feb 17 21:49:15 ubuntu-s-1vcpu-1gb-lon1-01 sshd[19744]: Server listening on 0.0.0.0 port 22.
+Feb 17 21:49:15 ubuntu-s-1vcpu-1gb-lon1-01 sshd[19744]: Server listening on :: port 22.
+Feb 17 21:49:15 ubuntu-s-1vcpu-1gb-lon1-01 systemd[1]: Started OpenBSD Secure Shell server.
+Feb 17 21:50:52 ubuntu-s-1vcpu-1gb-lon1-01 sshd[19753]: Received disconnect from 222.186.30.248 port 27931:11:  [preauth]
+Feb 17 21:50:52 ubuntu-s-1vcpu-1gb-lon1-01 sshd[19753]: Disconnected from authenticating user root 222.186.30.248 port 27931 [preauth]
+Feb 17 21:52:08 ubuntu-s-1vcpu-1gb-lon1-01 sshd[19778]: Invalid user hacluster from 129.204.101.132 port 45022
+Feb 17 21:52:09 ubuntu-s-1vcpu-1gb-lon1-01 sshd[19778]: Received disconnect from 129.204.101.132 port 45022:11: Bye Bye [preauth]
+Feb 17 21:52:09 ubuntu-s-1vcpu-1gb-lon1-01 sshd[19778]: Disconnected from invalid user hacluster 129.204.101.132 port 45022 [preauth]
